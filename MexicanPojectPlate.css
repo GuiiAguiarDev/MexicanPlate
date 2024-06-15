@@ -1,0 +1,762 @@
+/*zerando*/
+p,
+h1,
+h2,
+span,
+hr,
+button,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fundo*/
+body {
+  background-image: url("body3.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+/*Fundo*/
+
+.container-Menu {
+  max-width: 1260px;
+  margin: 0 auto;
+  /*Eu inserir um heigth aqui, para eu conseguir subir mais minha imagem fixada que etá com a animação
+  então por esse motivo que eu subi, lembrando que se eu tirar o heigth ai fica normal do jeito que era
+  se eu quiser voltar só retirar ele*/
+  height: 100px;
+  padding: 10px;
+}
+.menu {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  background: rgba(0, 0, 0, 0.6);
+  max-height: 80px;
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+
+  font-weight: 900;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+.img-logo {
+  max-width: 350px;
+
+  object-fit: contain;
+}
+
+/*MENU*/
+
+/*Foto abaixo menu*/
+
+.container-img-faixada {
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.container-img-faixada img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  animation: grow-and-shrink 4000ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Foto abaixo menu*/
+
+/*texto princiapl*/
+
+.text-principal {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 50px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.text-principal p:first-child,
+.text-principal p:nth-child(5) {
+  font-weight: bolder;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.text-principal p {
+  font-size: 1.5em;
+}
+
+.text-principal span {
+  font-size: 2em;
+  color: red;
+  font-weight: bolder;
+  display: inline-block;
+  transform: rotate(-10deg);
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  padding-right: 15px;
+}
+
+.text-principal .text-principal-funcionamento {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+hr {
+  border: solid rgb(235, 55, 10) 5px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  max-width: 560px;
+}
+
+/*Reserv*/
+.container-reserve {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 25px;
+  color: white;
+  font-weight: bolder;
+}
+
+.text-reserv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 75px;
+}
+
+.text-reserv p:first-child {
+  font-size: 1.5em;
+}
+
+.destaqueReserv {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5em;
+}
+
+.text-reserv :nth-child(3) {
+  border-radius: 75%;
+  height: 50px;
+  width: 150px;
+  background: rgb(255, 81, 0);
+  color: white;
+  margin-top: 10px;
+}
+
+.img-reserv {
+  padding-left: 75px;
+}
+
+.hr-reserv {
+  border: solid rgb(235, 55, 10) 5px;
+  max-width: 0;
+  display: block;
+  justify-content: none;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 0px;
+  font-weight: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*Reserv*/
+
+/*Pratos*/
+.container-pratos {
+  max-width: 100%;
+}
+
+.pratos {
+  max-width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.prato-1 {
+  background: url(guacamole.jpg);
+  border-radius: 10px;
+  background-size: cover;
+
+  width: 500px;
+  height: 450px;
+  align-content: center;
+  line-height: 70px;
+}
+
+.prato-1 p:nth-child(1) {
+  font-size: 3.5em;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  font-weight: bolder;
+}
+
+.prato-1 p:nth-child(2) {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  font-style: italic;
+  padding: 10px;
+}
+
+.prato-2 {
+  background: url(quesadilla.jpg);
+  border-radius: 10px;
+  background-size: cover;
+
+  width: 500px;
+  height: 450px;
+  align-content: center;
+  line-height: 70px;
+}
+
+.prato-2 p:nth-child(1) {
+  font-size: 3.5em;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  font-weight: bolder;
+}
+
+.prato-2 p:nth-child(2) {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  font-style: italic;
+  padding: 10px;
+}
+
+/*Pratos*/
+
+/*promoção*/
+.container-promocao {
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+.promocao {
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promocao-desconto {
+  max-width: 640px;
+  display: flex;
+}
+
+.promocao-desconto img {
+  border-radius: 50%;
+  border-left: 10px solid rgb(218, 89, 3);
+}
+
+.promocao-desconto ul {
+  flex-direction: column;
+  padding-left: 40px;
+  background: transparent;
+}
+
+.promocao-desconto ul li {
+  display: block;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  font-weight: bold;
+  font-size: 1.9em;
+  text-shadow: 0px 0px 10px red, 0 0 2px orange;
+
+  padding-bottom: 40px;
+}
+
+.promocao-desconto ul li::before {
+  content: "";
+  display: inline-block;
+  /*já baixar a imagem do tamanho que vai ficar certo aqui quando for icone,
+    agora se nao for tamanho exato, usar o backgournd-size:cover para funcionar,
+    no caso quando for imagem normal ou até icone com tamanho maior*/
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.taco::before {
+  background-image: url(/taco-icon-new.png);
+}
+
+.pimenta::before {
+  background-image: url(/pimenta-icon-new.png);
+}
+
+.guacomle::before {
+  background-image: url(/guacamole-icon-new.png);
+}
+
+/*promoção*/
+
+/*Promoção-text*/
+
+.promocao-text {
+  max-width: 340px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  /*colocar texto para dentro para fora na transversal e etc*/
+  rotate: 1 2 0.5 40deg;
+}
+
+.promocao-text ul {
+  border: solid 2px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.promocao-text ul li {
+  display: block;
+  text-decoration: none;
+
+  color: orange;
+  font-weight: bold;
+  font-size: 1.9em;
+  text-shadow: 0px 0px 10px red, 0 0 2px orange;
+  padding-bottom: 40px;
+}
+
+.promocao-text ul li::before {
+  content: "";
+  display: inline-block;
+  /*já baixar a imagem do tamanho que vai ficar certo aqui quando for icone,
+    agora se nao for tamanho exato, usar o backgournd-size:cover para funcionar,
+    no caso quando for imagem normal ou até icone com tamanho maior*/
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+  color: #fc4848;
+}
+
+.promocao-text p {
+  font-size: 2em;
+  font-weight: bold;
+  font-size: 1.9em;
+  /*color: orange;*/
+  font-weight: bolder;
+  /*text-shadow: 2px 2px #ff0000;*/
+  padding: 10px;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 10px red, 0 0 2px orange;
+  color: orange;
+}
+
+.unidade::before {
+  background-image: url(/icone1.png);
+}
+
+.promocao-text .titulo-promocao-text {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+/*Promoção-text*/
+
+/*Footer*/
+.container-rodape {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+.container-rodape img {
+  width: 300px;
+  height: 250px;
+
+}
+
+.text-rodape ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-rodape ul li {
+  display: flex;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 0px 0px 10px red, 0 0 2px orange;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+.container-rodape .text-rodape ul li {
+  text-decoration: none;
+}
+
+.redes-rodape ul li {
+  display: block;
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 10px red, 0 0 2px orange;
+
+  font-style: italic;
+
+  justify-items: center;
+  padding: 10px;
+}
+
+.redes-rodape ul li::before {
+  content: "";
+  display: inline-block;
+  /*já baixar a imagem do tamanho que vai ficar certo aqui quando for icone,
+    agora se nao for tamanho exato, usar o backgournd-size:cover para funcionar,
+    no caso quando for imagem normal ou até icone com tamanho maior*/
+  width: 42px;
+  height: 42px;
+  margin-right: 25px;
+  color: #fc4848;
+  /*Eu não vou conseguir alinhar com flex, para eu conseguir alinhar meu icone com o texto
+  eu precisei colocar o relative apenas e mais nada, nao precisei colocar o absolute em nenhum lugar
+  então, inserir o position relative e o top ou qualquer outro que seja, nesse exemplo foi top*/
+  position: relative;
+  top: 8px;
+}
+
+.insta::before {
+  background-image: url(/icone-insta.png);
+}
+
+.face::before {
+  background-image: url(/icone-facebook.png);
+}
+
+.tube::before {
+  background-image: url(/icone-youtube.png);
+}
+
+.redes-rodape ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Footer*/
+
+/*-------------------------------------------------------------------*/
+/*Mobile*/
+
+/*Menu mobile*/
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 752px) {
+  /*menu e logo*/
+
+  /*Hamburger Inicio*/
+  #btn-mobile {
+    display: block;
+    font-size: 25px;
+    margin: 5px;
+    color: white;
+    background: rgb(255, 81, 0);
+    border-radius: 75%;
+    height: 50px;
+    width: 150px;
+    background: rgb(255, 81, 0);
+    color: white;
+    margin-top: 10px;
+  }
+  .menu ul {
+    display: none;
+    top: 70px;
+    right: 0px;
+    background: none;
+
+  }
+
+  .menu ul li {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  ul.active {
+    display: block;
+
+    margin-bottom: 60px;
+  }
+
+  /*Hamburger - Fim*/
+
+  .container-Menu {
+    height: 300px;
+  }
+
+  .menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-logo {
+    max-width: 250px;
+
+    object-fit: contain;
+  }
+
+  /*menu e logo*/
+
+  /*------------------------------------------------------*/
+
+  /*Fiaxada*/
+
+  .container-img-faixada {
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .container-img-faixada img {
+    align-items: center;
+    /*Aqui eu tirei da imagem a resposividade dela ou seja
+  conforme eu for mudando a tela ela ir alterando o tamanho dela(janela),
+  pois se eu deixasse assim iria ficar bugado, mas passou da resolução
+  que eu deifini no mobile ela fica resposivel de novo, só no mobile tirei*/
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    animation: grow-and-shrink 3000ms;
+    animation-timing-function: ease-in-out;
+    margin: 0 auto;
+  }
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /*Fiaxada*/
+
+  /*------------------------------------------------------*/
+
+  /*Text principal*/
+
+  .text-principal p:first-child,
+  .text-principal p:nth-child(5) {
+    font-size: 2.2em;
+  }
+  .text-principal span {
+    font-size: 1.5em;
+
+    margin-bottom: 10px;
+    padding-right: 15px;
+  }
+
+  /*------------------------------------------------------*/
+
+  /*Reserv*/
+  .container-reserve {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 25px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .text-reserv {
+    display: flex;
+
+    align-items: none;
+    justify-content: none;
+    padding-right: 0px;
+  }
+
+  .text-reserv p:first-child {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .destaqueReserv {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+  }
+
+  .text-reserv :nth-child(3) {
+    margin-bottom: 15px;
+  }
+
+  .img-reserv {
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+
+  .hr-reserv {
+    display: none;
+  }
+
+  /*------------------------------------------------------*/
+
+  /*Pratos*/
+
+  .container-pratos {
+    max-width: 100%;
+  }
+
+  .pratos {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    padding: 0px;
+  }
+
+  .prato-1 {
+    background: url(guacamole.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+
+  .prato-2 {
+    background: url(quesadilla.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+
+  /*Pratos*/
+
+  /*---------------------------------------------------------------------------*/
+
+  /*Promoção*/
+
+  .container-promocao {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .promocao {
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .promocao-desconto {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .promocao-desconto img {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .promocao-desconto ul {
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+
+  .promocao-desconto ul li {
+    padding: 20px;
+
+    padding-bottom: 40px;
+  }
+
+  /*Promoção*/
+  /*-------------------------------------------------------------------*/
+
+  /*Rodape*/
+
+  /*Footer*/
+  .container-rodape {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 50px auto;
+  }
+  .container-rodape img {
+    margin: 0 auto;
+  }
+
+  .text-rodape ul li {
+    font-size: 1.3em;
+  }
+
+  .container-rodape .text-rodape ul li {
+    text-decoration: none;
+  }
+}
+
+/*Rodape*/
+
+/*Menu mobile*/
+
+/*-------------------------------------------------------------------*/
