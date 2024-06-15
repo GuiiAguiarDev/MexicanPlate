@@ -468,6 +468,7 @@ hr {
 }
 
 .insta::before {
+
   background-image: url(icone-insta.png);
 }
 
@@ -483,6 +484,8 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+
 
 /*Footer*/
 
@@ -629,6 +632,7 @@ hr {
   .text-reserv p:first-child {
     font-size: 1.5em;
     text-align: center;
+    margin-top: 10px;
   }
 
   .destaqueReserv {
@@ -732,6 +736,11 @@ hr {
     text-align: center;
  }
 
+ 
+.unidade::before {
+  background-image: url(icone1-mobile.png);
+}
+
   .promocao-text{
 padding: 10px;
  }
@@ -758,17 +767,49 @@ padding: 10px;
     flex-wrap: wrap;
 
     margin: 50px auto;
+
+  
   }
+
   .container-rodape img {
     margin: 0 auto;
   }
 
+  
   .text-rodape ul li {
-    font-size: 1.3em;
+    
+    margin-top: 20px;
+    
   }
+  
 
+
+
+
+
+  
   .container-rodape .text-rodape ul li {
     text-decoration: none;
+  }
+
+  .redes-rodape ul li::before {
+  
+    width: 24px;
+    height: 24px;
+   
+  }
+
+  .insta::before {
+    width: 25px;
+    background-image: url(icone-insta-mobile.png);
+  }
+  
+  .face::before {
+    background-image: url(icone-face-mobile.png);
+  }
+  
+  .tube::before {
+    background-image: url(icone-tube-mobile.png);
   }
 }
 
