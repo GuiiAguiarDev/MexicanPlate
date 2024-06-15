@@ -322,15 +322,15 @@ hr {
   margin-right: 15px;
 }
 .taco::before {
-  background-image: url(/taco-icon-new.png);
+  background-image: url(taco-icon-new.png);
 }
 
 .pimenta::before {
-  background-image: url(/pimenta-icon-new.png);
+  background-image: url(pimenta-icon-new.png);
 }
 
 .guacomle::before {
-  background-image: url(/guacamole-icon-new.png);
+  background-image: url(guacamole-icon-new.png);
 }
 
 /*promoção*/
@@ -391,7 +391,7 @@ hr {
 }
 
 .unidade::before {
-  background-image: url(/icone1.png);
+  background-image: url(icone1.png);
 }
 
 .promocao-text .titulo-promocao-text {
@@ -728,6 +728,13 @@ hr {
     margin-bottom: 25px;
   }
 
+  .promocao-text .titulo-promocao-text {
+    text-align: center;
+ }
+
+  .promocao-text{
+padding: 10px;
+ }
   .promocao-desconto ul {
     padding-left: 0px;
     padding-bottom: 20px;
