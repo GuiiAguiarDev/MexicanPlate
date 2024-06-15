@@ -468,15 +468,15 @@ hr {
 }
 
 .insta::before {
-  background-image: url(/icone-insta.png);
+  background-image: url(icone-insta.png);
 }
 
 .face::before {
-  background-image: url(/icone-facebook.png);
+  background-image: url(icone-facebook.png);
 }
 
 .tube::before {
-  background-image: url(/icone-youtube.png);
+  background-image: url(icone-youtube.png);
 }
 
 .redes-rodape ul {
@@ -676,6 +676,12 @@ hr {
     margin-top: 10px;
   }
 
+  .prato-1 p:nth-child(1) {
+    font-size: 3.0em;
+  }
+
+
+
   .prato-2 {
     background: url(quesadilla.jpg);
     border-radius: 10px;
@@ -685,6 +691,11 @@ hr {
     line-height: 50px;
     margin-top: 10px;
   }
+
+  .prato-2 p:nth-child(1) {
+    font-size: 3.0em;
+  }
+
 
   /*Pratos*/
 
