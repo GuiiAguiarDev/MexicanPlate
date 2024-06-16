@@ -10,4 +10,3 @@ function toggleMenu(){
 
 btnMobile.addEventListener('click', toggleMenu);
 
-console.log('teste');
