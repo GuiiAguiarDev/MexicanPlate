@@ -372,8 +372,8 @@ hr {
   /*já baixar a imagem do tamanho que vai ficar certo aqui quando for icone,
     agora se nao for tamanho exato, usar o backgournd-size:cover para funcionar,
     no caso quando for imagem normal ou até icone com tamanho maior*/
-  width: 24px;
-  height: 24px;
+  width: 64px;
+  height: 64px;
     margin-right: 25px;
   color: #fc4848;
 }
@@ -800,8 +800,8 @@ padding: 10px;
 
   .redes-rodape ul li::before {
   
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 64px;
+    max-height: 64px;
   }
 
   .insta::before {
