@@ -738,6 +738,9 @@ img{
     margin-bottom: 25px;
   }
 
+
+
+
   .promocao-text .titulo-promocao-text {
     text-align: center;
  }
@@ -745,10 +748,13 @@ img{
  
 .unidade::before {
   background-image: url(icone1-mobile.png);
+  position: relative;
+  top:20px
 }
 
   .promocao-text{
 padding: 10px;
+height: 500px;
  }
   .promocao-desconto ul {
     padding-left: 0px;
@@ -767,59 +773,76 @@ padding: 10px;
   /*Rodape*/
 
   /*Footer*/
-  .container-rodape {
-    max-width: 300px;
-    display: flex;
-    flex-wrap: wrap;
+  /*Footer*/
+.container-rodape {
+  max-width: 960px;
+  display: flex;
 
-    margin: 50px auto;
+  justify-content: space-evenly;
+  align-items: center;
+flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+}
+.container-rodape img {
+  width: 300px;
+  height: 250px;
 
-  
-  }
-
-  .container-rodape img {
-    margin: 0 auto;
-  }
-
-  
-  .text-rodape ul li {
-    
-    margin-top: 20px;
-    
-  }
-  
-
-
-
-
-
-  
-  .container-rodape .text-rodape ul li {
-    text-decoration: none;
-  }
-
-  .redes-rodape ul li::before {
-  
-    max-width: 64px;
-    max-height: 64px;
-  }
-
-  .insta::before {
-    width: 25px;
-    background-image: url(icone-insta-mobile.png);
-  }
-  
-  .face::before {
-    background-image: url(icone-face-mobile.png);
-  }
-  
-  .tube::before {
-    background-image: url(icone-tube-mobile.png);
-  }
 }
 
+
+
+
+.text-rodape ul{
+  margin-top: 30px;
+}
+
+.text-rodape ul li {
+ 
+
+  padding-top: 20px;
+}
+
+
+
+
+
+.redes-rodape ul li::before {
+
+  width: 64px;
+  height: 64px;
+
+  top: 25px;
+}
+
+.insta::before {
+
+  background-image: url(icone-insta-mobile.png);
+
+}
+
+.face::before {
+  background-image: url(icone-face-mobile.png);
+}
+
+.tube::before {
+  background-image: url(icone-tube-mobile.png);
+}
+
+.redes-rodape ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*Footer*/
+
+
+  
 /*Rodape*/
 
 /*Menu mobile*/
 
 /*-------------------------------------------------------------------*/
+}
