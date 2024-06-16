@@ -313,6 +313,7 @@ hr {
 
 .promocao-desconto ul li::before {
   content: "";
+  background-size: cover;
   display: inline-block;
   /*já baixar a imagem do tamanho que vai ficar certo aqui quando for icone,
     agora se nao for tamanho exato, usar o backgournd-size:cover para funcionar,
@@ -373,8 +374,13 @@ hr {
     no caso quando for imagem normal ou até icone com tamanho maior*/
   width: 24px;
   height: 24px;
-  margin-right: 25px;
+    margin-right: 25px;
   color: #fc4848;
+}
+
+img{
+  max-width: 100%;
+
 }
 
 .promocao-text p {
@@ -794,9 +800,8 @@ padding: 10px;
 
   .redes-rodape ul li::before {
   
-    width: 24px;
-    height: 24px;
-   
+    max-width: 24px;
+    max-height: 24px;
   }
 
   .insta::before {
